@@ -1,0 +1,118 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion{
+  width: 100%;
+  margin: 0;
+  background-color: #D7BDE2;
+  padding: 0;
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+}
+.navegacion ul{
+  list-style: none;
+}
+.menu{
+  margin: 0;
+}
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 25px;
+  color: black;
+  font-family: cursive;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu li a:hover{
+  color: white;
+  transition: all .2s;
+}
+
+main{
+  padding-top: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+img{
+    width: 100%;
+    height: 70%;
+}
+
+.container-all{
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+
+}
+
+.slide{
+    display: flex;
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 18s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    width: 100%;
+
+}
+
+.item-slide{
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
