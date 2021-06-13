@@ -1,6 +1,10 @@
 body{
     padding: 0;
     margin: 0;
+    background-image: url(https://i.pinimg.com/originals/fe/0f/2a/fe0f2a0dfa588c9764b33e8224b701ae.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100%;
 }
 
 .navegacion{
@@ -28,18 +32,18 @@ body{
   color: black;
   font-family: cursive;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .menu li a:hover{
-  color: white;
+  color: #E74C3C;
   transition: all .2s;
 }
 
 main{
   padding-top: 6%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 img{
@@ -47,14 +51,13 @@ img{
     height: 70%;
 }
 
-.container-all{
+.container-all1{
     width: 100%;
     overflow: hidden;
     height: 350px;
-
+    margin-bottom: 1%;
 }
-
-.slide{
+.slide1{
     display: flex;
     transition: all 600ms;
     animation-name: autoplay;
@@ -63,46 +66,34 @@ img{
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     width: 100%;
-
 }
-
-.item-slide{
+.item-slide2{
     flex-direction: column;
     flex-shrink: 0;
     flex-grow: 0;
     max-width: 100%;
-
 }
-
 input[id="1"]:checked ~ .slide{
     animation: none;
     transform: translate3d(0, 0, 0);
 }
-
 input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
     background: #fff;
 }
-
 input[id="2"]:checked ~ .slide{
     animation: none;
     transform: translate3d(calc(-100% * 1), 0, 0);
 }
-
 input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
     background: #fff;
 }
-
-
 input[id="3"]:checked ~ .slide{
     animation: none;
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
-
 input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     background: #fff;
 }
-
-
 @keyframes autoplay{
     33%{
         transform: translate3d(calc(-100% * 0), 0, 0);
@@ -115,4 +106,65 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     100%{
         transform: translate3d(calc(-100% * 2), 0, 0);
     }
+}
+
+#section1{
+  width: 30%;
+  float: left;
+}
+#nota{
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+#section2{
+  width: 69%;
+  margin-left: 1%;
+  float: right;
+}
+#titulo{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+#sub{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+.noticia{
+  width: 35%;
+  float: left;
+}
+.parrafo{
+  text-align: center;
+  font-size: 19px;
+  margin-top: 6%;
+}
+.noticia2{
+  width: 35%;
+  float: right;
+}
+.noticia3{
+  width: 35%;
+  float: left;
+  margin-top: 6%;2
+}
+.parrafo2{
+  text-align: center;
+  font-size: 19px;
+  margin-top: 13%;
+}
+
+footer{
+  background-color: #D7BDE2;
+  margin: 0;
+  margin-bottom: 0%;
+  margin-top: 10%;
+  width: 100%;
+  clear: both;
+
+}
+#p{
+  margin: 0%;
 }
