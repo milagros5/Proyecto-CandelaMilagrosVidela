@@ -121,6 +121,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
   width: 69%;
   margin-left: 1%;
   float: right;
+  margin-bottom: 5%;
 }
 #titulo{
   text-align: center;
@@ -159,12 +160,32 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 footer{
   background-color: #D7BDE2;
   margin: 0;
-  margin-bottom: 0%;
-  margin-top: 10%;
   width: 100%;
+  padding: 4%;
+  padding-top: 2%;
   clear: both;
+}
+
+#logo{
+  width: 27%;
+  margin: 0;
+  padding-right: 5%;
+  float: left;
+}
+#ul{
+  margin: 0;
+  list-style: none;
 
 }
-#p{
-  margin: 0%;
+.link{
+  font-size: 15px;
+  color: black;
+  text-decoration: inherit;
+  font-style: normal;
+
+}
+.logo_redsocial{
+  width: 3%;
+  margin: 1%;
+
 }
